@@ -1,0 +1,13 @@
+<div *ngFor="let user of users; let i=index">
+    <p>{{i}}) {{user.name}}</p>
+</div>
+
+<div> Date: {{'2022-07-21T09:35:31.820Z' | dateFormat}}</div>
+
+List of Hobbies:
+<br/>
+<div *ngFor="let hobby of allHobbies">
+    {{hobby}}
+</div>
+<button (click)="addHobby()" class="hobbyBtn-for-test"> + Add Hobby</button>
+<ng-template #hobbyContainer></ng-template>
